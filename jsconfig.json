@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "module": "es6",
+    "moduleResolution": "node",
+    "paths": {
+      "@components/*": ["./components/*"],
+      "@assets/*": ["./assets/*"],
+    }
+  },
+  "exclude": ["node_modules", "build"],
+}

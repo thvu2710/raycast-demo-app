@@ -1,11 +1,27 @@
 import styled from "styled-components";
 import bg from "@assets/bg.png";
 
-export const RootWrapper = styled.div`
+export const MainBannerWrapper = styled.div`
   background-image: url(${bg.src});
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  position: relative;
+`;
+
+export const ProductivityBannerWrapper = styled.div`
+  background: linear-gradient(
+    106deg,
+    #ffa7a7 0.63%,
+    #a30cb5 56.52%,
+    #00173a 100%
+  );
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  min-height: 660px;
+  width: 100%;
 `;
 
 const MainTitle = styled.div`

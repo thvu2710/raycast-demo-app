@@ -11,8 +11,10 @@ module.exports = {
   theme: {
     colors: {
       "white-normal": "#fff",
+      "light-white-normal": "gba(255, 255, 255, 0.80)",
       "light-white": "rgba(255, 255, 255, 0.90)",
       "gray-normal": "rgba(255, 255, 255, 0.60)",
+      "light-gray": "rgba(255, 255, 255, 0.15)",
       "gray-dark": "rgba(255, 255, 255, 0.40)",
       "blue-normal": "#2BAFFF",
       "green-normal": "#59D499",

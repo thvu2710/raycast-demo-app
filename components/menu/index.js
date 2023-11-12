@@ -1,20 +1,22 @@
 import React, { useState } from "react";
-import Link from 'next/link';
+import Link from "next/link";
 import { MENUS_CONFIG } from "./config";
 
 const MenuTop = () => {
-  // const [isOpen, setIsOpen] = useState(false);
-
-  // const handleClick = () => {
-  //   setIsOpen(!isOpen);
-  // };
   return (
     <header>
-      <div className="flex text-gray-normal text-font-normal leading-[16px] gap-8 py-[20px]">
+      <div className="flex gap-8 py-[20px] text-font-normal leading-[16px] text-gray-normal">
         {MENUS_CONFIG.map((item) => (
-          <Link href={item.link} className="text-primary-p1" key={item.id}>
-            {item.title}
-          </Link>
+          <div className="flex items-center gap-[5px]" key={item.id}>
+            <Link href={item.link} className="text-primary-p1" key={item.id}>
+              {item.title}
+            </Link>
+            {item.isNew && (
+              <span className="rounded border border-blue-normal p-[2px] text-[10px] text-blue-normal">
+                New
+              </span>
+            )}{" "}
+          </div>
         ))}
       </div>
     </header>

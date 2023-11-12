@@ -10,7 +10,7 @@ import {
   BlendWrapper,
   HLBigTitle,
   AdditionInfo2Wrapper,
-} from "./styled";
+} from "@components/styled";
 import homeBanner from "@assets/home-banner.png";
 import productivityBanner from "@assets/productivity-banner.png";
 import team from "@assets/team.png";

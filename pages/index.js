@@ -16,7 +16,7 @@ import productivityBanner from "@assets/productivity-banner.png";
 import team from "@assets/team.png";
 import additionalBanner1 from "@assets/additional_banner1.png";
 import vector from "@assets/glow.svg";
-
+import additionalBanner2 from "@assets/additional_banner2.png";
 import hi1 from "@assets/h1.png";
 import hi2 from "@assets/h2.png";
 import hi3 from "@assets/h3.png";
@@ -26,9 +26,9 @@ export default function Home() {
   return (
     <>
       <MainBannerWrapper className="flex flex-col items-center">
-        <div className="mb-[100px] flex w-full max-w-3xl justify-between">
+        <div className="mb-[100px] flex w-full max-w-[100%] flex-col justify-between md:max-w-3xl md:flex-row">
           <MenuTop />
-          <div className="flex gap-8 py-[20px] text-font-normal leading-[16px] text-gray-normal">
+          <div className="flex gap-8 px-[20px] py-[20px] text-font-normal leading-[16px] text-gray-normal md:px-[0px]">
             <Link href="#">Login</Link>
             <Link href="#">Download</Link>
           </div>
@@ -67,7 +67,7 @@ export default function Home() {
           <span>Install via Homebrew</span>
         </div>
 
-        <p className="mt-[100px] flex items-center text-[52px]	font-semibold">
+        <p className="mt-[100px] flex flex-col items-center text-[52px] font-semibold md:flex-row">
           It's as easy as{" "}
           <span className="text-green-normal">&nbsp;installed&nbsp;</span>
           <svg
@@ -127,7 +127,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="absolute right-[-110px] top-[80px]">
+        <div className="relative lg:absolute lg:right-[-110px] lg:top-[80px]">
           <Image
             src={productivityBanner}
             height={517}
@@ -139,7 +139,7 @@ export default function Home() {
 
       <div className="mx-auto mt-[32px] max-w-7xl">
         <div className="flex min-h-[699px] flex-col  justify-center lg:grid lg:grid-cols-10 lg:gap-[32px]">
-          <div className=" bg-light-dark lg:col-span-4">
+          <div className="col-span-10 bg-light-dark lg:col-span-4">
             <div className="m-auto mt-[64px] px-[64px]">
               <div className="h-[64px] w-[64px] rounded-2xl bg-light-dark p-[16px]">
                 <svg
@@ -178,7 +178,7 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <AdditionInfo2Wrapper className="justify-center bg-light-dark lg:col-span-6">
+          <AdditionInfo2Wrapper className="col-span-10 justify-center bg-light-dark lg:col-span-6">
             <div className="relative m-auto mt-[64px] px-[64px]">
               <div className="h-[64px] w-[64px] rounded-2xl bg-light-dark p-[16px]">
                 <svg
@@ -209,6 +209,9 @@ export default function Home() {
             </div>
           </AdditionInfo2Wrapper>
         </div>
+      </div>
+      <div className="mt-[72px] md:hidden">
+        <Image src={additionalBanner2} height={364} width={733} alt="raycat" />
       </div>
       <div className="mt-[32px] text-center text-[16px] ">
         Explore the store
@@ -262,11 +265,11 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="absolute right-[-110px] top-[80px]">
+        <div className="lg:absolute lg:right-[-110px] lg:top-[80px]">
           <Image src={team} height={517} width={780} alt="raycat" />
         </div>
       </RaycastForTeamBannerWrapper>
-      <div className="m-auto mt-[32px] flex max-w-7xl gap-[32px]">
+      <div className="m-auto mt-[32px] flex max-w-7xl flex-col gap-[32px] lg:flex-row">
         <div className="bg-light-dark p-[64px]">
           <div className="h-[64px] w-[64px] rounded-2xl bg-light-dark p-[16px]">
             <svg
@@ -350,7 +353,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="mt-[64px] text-center">
+      <div className="mt-[64px] flex items-center justify-center text-center">
         Learn about developing for teams
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -376,7 +379,7 @@ export default function Home() {
         complete tasks, calculate, share common links, and much more.
       </p>
 
-      <div className="m-auto mt-[94px] flex max-w-7xl gap-[8px]">
+      <div className="m-auto mt-[94px] flex max-w-7xl flex-col gap-[8px] lg:flex-row">
         <div className="bg-light-dark p-[32px]">
           <div className="h-[64px] w-[64px] rounded-2xl bg-light-dark p-[16px]">
             <Image src={hi1} height={64} width={64} alt="home banner raycat" />

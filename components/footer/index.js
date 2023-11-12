@@ -11,7 +11,7 @@ import {
 
 const Footer = () => {
   return (
-    <footer className="m-auto mt-[180px] flex max-w-5xl justify-between py-[144px]">
+    <footer className="m-auto mt-[180px] flex max-w-5xl flex-col justify-between px-[20px] py-[144px] md:flex-row md:px-[0px]">
       <div className="flex flex-col gap-8 py-[20px] text-font-normal leading-[16px] text-gray-normal">
         <svg
           xmlns="http://www.w3.org/2000/svg"

@@ -47,6 +47,10 @@ const MainTitle = styled.div`
 export const BigTitle = styled(MainTitle)`
   color: #fff;
   font-style: normal;
+  @media screen and (max-width: 640px) {
+    font-size: 45px;
+    line-height: 20px;
+  }
 `;
 
 export const HLBigTitle = styled(MainTitle)`
@@ -56,6 +60,10 @@ export const HLBigTitle = styled(MainTitle)`
   -webkit-text-fill-color: transparent;
 
   font-style: italic;
+
+  @media screen and (max-width: 640px) {
+    font-size: 30px;
+  }
 `;
 
 export const BlendWrapper = styled.div`
@@ -68,4 +76,8 @@ export const AdditionInfo2Wrapper = styled.div`
   background-size: auto;
   background-position: bottom;
   position: relative;
+
+  @media screen and (max-width: 640px) {
+    background: none;
+  }
 `;
